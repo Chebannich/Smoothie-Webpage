@@ -1,8 +1,14 @@
+
+
+/***** Import *****/
 @import "fonts"
 @import "libs"
 @import "vars"
 
+
+/***** Css Reset *****/
 *
+	margin: 0
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
 	box-sizing: border-box
@@ -41,20 +47,195 @@ body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.65
+	line-height: 1
 	font-family: $default-font
 	overflow-x: hidden
+	background: #fff
 
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
 
-.text-center
-	text-align: center
+a, a:hover
+	color: inherit
+    text-decoration: inherit
 
-::selection
-	background-color: $accent
+.header ul li
+	display: inline-block
+
+
+
+/***** Specifications *****/
+.wrap
+	width: 100%
+	max-width: 1200px
+	margin: 0 auto
+	text-align: center
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+
+.wrap__big
+	max-width: 1600px
+
+.row
+	display: flex
+
+
+.btn
 	color: #fff
+	font-size: 24px
+	font-weight: bold
+	padding: 24px 40px
+	border-radius: 100px
+	width: 18%
+	cursor: pointer
+	img
+		margin-left: 55px
+
+.btn_green
+	background: #0aa566
+
+h2
+	font-size: 50px
+	font-weight: 900
+	color: #f7ae3b
+
+
+
+
+/***** Header *****/
+.header
+	background: #f2b33a url(../img/bg-header.png) center bottom no-repeat
+	background-size: contain
+	height: 100vh
+
+.header-top
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 5vh 0 7vh 0
+
+.menu-block__item
+	color: #fff
+	a
+		font-size: 16px
+		font-weight: bold
+		text-transform: uppercase
+		margin: 0 15px
+
+.header-logo
+	margin-left: 80px
+
+.icons-block
+	margin-left: 220px
+	.icons-block__item
+		img
+			margin: 0 20px
+			width: 20px	
+			height: auto
+
+.line
+	display: block
+	height: 2px
+	width: 47px
+	background: #ffd68f
+	margin-right: -20px
+
+.social-block_item
+	img
+		margin: 0 5px
+		width: 35px	
+		height: auto
+
+
+/***** Offer *****/
+.offer
+	padding: 7vh
+
+.offer__title
+	margin-bottom: 50px
+
+.offer__text
+	margin-bottom: 80px
+	font-size: 18px
+	line-height: 2
+	color: #1e1e1e
+	width: 880px
+
+.offer-table
+	display: flex
+	justify-content: center
+	table
+		border: 3px solid #fff
+		td
+			width: 263px
+			height: 180px
+			border: 2px solid #f6edde
+			color: #f2612d
+			font-size: 25px
+			font-weight: 900
+			img
+				margin-bottom: 25px
+
+
+/***** About *****/
+.about
+	background: #15856d
+	padding: 60px 0
+
+.about-side
+	min-width: 50%
+
+.about__left-side
+	img
+		position: absolute
+		height: 77vh
+		left: 10%
+
+.about__right-side
+	text-align: left
+	padding: 0
+	.about__title
+		color: #fff
+		font-size: 55px
+		font-weight: 700
+		margin: 0 0 40px 13px
+		span
+			color: #cae941
+
+.about-list
+	margin-bottom: 20px
+	.about-list_item
+		color: #fff
+		line-height: 2
+		font-size: 21px
+		list-style-image: url(../img/listimg.png)
+		span
+			font-weight: 700
+
+.about-btn
+	margin-left: 13px
+	width: 83%
+	border: 2px solid #f8b231
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import "media" // Всегда в конце
+
